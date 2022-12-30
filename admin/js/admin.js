@@ -35,7 +35,7 @@ var coopAC = document.getElementById("coopAC");
 
 var addSchool = document.getElementById("addSchool");
 
-function insertData() {
+function InsertData() {
   set(ref(db, "School/" + sName.value),
     {
       "School Name": sName.value,
@@ -54,5 +54,9 @@ function insertData() {
     });
     }
 
+function now() {
+      alert("hello")
+    }
 // assign events to buttons
-addSchool.addEventListener("click", insertData);
+addSchool.addEventListener("click", InsertData);
+
